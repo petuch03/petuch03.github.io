@@ -248,9 +248,6 @@
             while(d2-d < ms);
         }
 
-        function pauseGame() {
-            wait(1000)
-        }
 
         function setupEventListeners() {
             addEventListener('keydown', e => {
@@ -265,8 +262,6 @@
                     e.preventDefault();
                 }
             });
-            restartBtn.addEventListener('click', startGame);
-            pauseBtn.addEventListener('click', pauseGame);
         }
 
         function setPlayerPos(x, y) {
